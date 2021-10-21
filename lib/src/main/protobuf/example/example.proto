@@ -1,5 +1,0 @@
-package example;
-
-message Example {
-  int32 hello = 1;
-}
