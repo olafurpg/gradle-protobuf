@@ -12,6 +12,12 @@ plugins {
     id 'com.google.protobuf' version "0.8.17"
 }
 
+protobuf {
+  protoc {
+    artifact = "com.google.protobuf:protoc:0.8.17"
+  }
+}
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
