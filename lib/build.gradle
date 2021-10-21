@@ -16,6 +16,13 @@ repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
 }
+sourceSets {
+    main {
+        java {
+            srcDirs 'build/generated/source/proto/main/java'
+        }
+    }
+}
 
 dependencies {
     // Use JUnit Jupiter for testing.
@@ -34,6 +41,7 @@ tasks.named('test') {
 }
 
 protobuf {
+  java {}
   generateProtoTasks {
     all().each { task ->
       task.generateDescriptorSet = true

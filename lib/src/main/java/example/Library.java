@@ -3,9 +3,11 @@
  */
 package example;
 
+import mypackage.MyClassname;
+
 public class Library {
     public boolean someLibraryMethod() {
-        mypackage.Myclassname.A.newBuilder();
+        System.out.println(MyClassname.A.newBuilder().setA("hello").build().getA());
         return true;
     }
 }
