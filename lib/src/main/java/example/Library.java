@@ -5,6 +5,7 @@ package example;
 
 public class Library {
     public boolean someLibraryMethod() {
+        mypackage.Myclassname.A.newBuilder();
         return true;
     }
 }

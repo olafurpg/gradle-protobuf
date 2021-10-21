@@ -2,9 +2,20 @@ syntax = "proto3";
 
 package example;
 
-option java_package = "examplephone";
-option java_outer_classname = "PhoneProtos";
+option java_package = "mypackage";
+option java_outer_classname = "MyClassname";
 
-message Phone {
-  optional string number = 1;
+message A {
+  message B {
+    string b = 1;
+    C c = 2;
+    message C {
+      string c = 1;
+    }
+  }
+  string a = 1;
+  B b = 2;
+}
+message after {
+  string a = 1;
 }
