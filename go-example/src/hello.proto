@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package hello;
+
+option go_package = "github.com/olafurpg/go-protobuf";
+
+message Hello {
+	string a = 1;
+}
